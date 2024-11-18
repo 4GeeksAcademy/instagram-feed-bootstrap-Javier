@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e13b798f1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bg-light py-2">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div class="justify-content-start">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p class="d-inline-block fs-5 fw-bold">Instagram</p>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle m-2" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li></li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li></li><a class="dropdown-item" href="#">Private and Data</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li></li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                        id="textareaModal"></textarea>
+                    <div class="row p-2">
+                        <button class="rounded border col-1 m-1 p-1 btn-light"><i class="fa-solid fa-camera"></i></button>
+                        <button class="rounded border col-1 m-1 p-1 btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Grid -->
+    <div class="container-fluid p-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a type="button" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item">
+                <a type="button" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row p-1">
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Labrador_Retriever_%281210559%29.jpg/640px-Labrador_Retriever_%281210559%29.jpg" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://es.mypet.com/wp-content/uploads/sites/23/2021/03/GettyImages-1143107320-e1597136744606.jpg" alt="foto"></div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPNsEqlb4SDupA-IhwCKsEhqfukw5kO3BBA&s" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://static.wikia.nocookie.net/reinoanimalia/images/e/ed/Golden_retriver.png/revision/latest/thumbnail/width/360/height/360?cb=20130303080930&path-prefix=es" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="foto"></div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://images.ecestaticos.com/6uBjSmsBorRk6l_IHAxkBS1JCwE=/114x0:1997x1410/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F721%2F122%2F714%2F72112271431cb1078c3fe3e75ad5ab41.jpg" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://images.unsplash.com/photo-1518815068914-038920b6f0c6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="foto"></div>
+                    <div class="col-4 p-1"><img class="img-fluid" style="height: 30vw; object-fit: cover;" src="https://vitakraft.es/wp-content/uploads/2020/12/Blog_HistoriaPerros-1110x600.jpg" alt="foto"></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded bg-light p-0">
+                        <div class="d-flex">
+                            <strong class="w-100 p-3 fs-5">My Crazy dog Spark!</strong>
+                            <div class="p-1">08/26</div>
+                        </div>
+                        <img class="img-fluid col-12" style="object-fit: cover;" src="https://static.wikia.nocookie.net/reinoanimalia/images/e/ed/Golden_retriver.png/revision/latest/thumbnail/width/360/height/360?cb=20130303080930&path-prefix=es" alt="foto">
+                        <div class="p-2">
+                            <strong>204 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on Instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded bg-light p-0">
+                        <div class="d-flex">
+                            <strong class="w-100 p-3 fs-5">The greatness of Croatia</strong>
+                            <div class="p-1">04/09</div>
+                        </div>
+                        <img class="img-fluid col-12" style="object-fit: cover;" src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369.jpg" alt="foto">
+                        <div class="p-2">
+                            <strong>26985 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on Instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded bg-light p-0">
+                        <div class="d-flex">
+                            <strong class="w-100 p-3 fs-5">Amazing GOAL by Cristiano!</strong>
+                            <div class="p-1">06/10</div>
+                        </div>
+                        <img class="img-fluid col-12" style="object-fit: cover;" src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4200,h_2362,x_0,y_264/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/para_ganar/01jagr1h47r3p9wdah1t.jpg" alt="foto">
+                        <div class="p-2">
+                            <strong>204 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on Instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
